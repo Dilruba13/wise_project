@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap');
+
+:root{
+    --dark-color:#14151c;
+    --white-color: #ffffff;
+    --primary-color: #e0f013;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    
+}
+
+body{
+    font-family: 'Instrument Sans', sans-serif;
+    background-color: var(--white-color);
+    color: var(--dark-color);
+
+    
+}
+ 
+
+/* header section start*/
+.top-bar p{
+    font-size: 14px;
+    color: var(--white-color);
+    background-color: var(--dark-color);
+    font-weight: 500;
+    margin-bottom: 0;
+  
+
+}
+.top-bar p:hover {
+    color: var(--white-color);
+    background-color: #e0460a;
+    
+ 
+  }
+  .top-bar{
+    background-color: #14151c;
+    transition: background-color 5 ease;
+    cursor: pointer;
+  }
+.navbar-brand{
+    font-size: px;
+    font-weight: 700;
+}
+.btn{
+    border-radius: 50px;
+    border: 1px none var(--dark-color);
+    font-size: 14px;
+    line-height: 17px;
+    background-color: #e0460a;
+    padding: 12px 24px;
+}
+.btn:hover {
+    color: var(--white-color);
+    background-color: var(--dark-color);
+ 
+  }
+.nav-link{
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--primary-color);
+
+}
+.navbar{
+    border-bottom: 1px solid #ededec;
+    padding: 24px 0;
+    margin: 24px;
+}
+/* header section end */
+
+/* hero section start */
+
+.hero-content{
+    max-width: 809px;
+    padding-top: 50px;
+
+}
+.hero-content h1{
+    font-size: 60px;
+    line-height: 66px;
+    color: #201515;
+    font-weight: 500;
+    
+}
+.hero-content p{
+    font-size: 18px;
+    line-height: 27px;
+    color: #898989;
+    font-weight: 400;
+    max-width: 600px;
+    margin: 32px auto;
+}
+
+
+
+/* hero section end  */
+
+
+@media (max-width:600px)
+.hero-content h1 {
+    font-size: 48px;
+    line-height: 48px;
+}
+
+.moving-section {
+    position: relative;
+    overflow: hidden;
+    background-color: #f8f9fa;
+  }
+
+  .moving-content {
+    position: relative;
+    animation: moveRightToLeft 4s linear infinite;
+  }
+
+  @keyframes moveRightToLeft {
+    0% { left: 100%; }
+    100% { left: -100%; }
